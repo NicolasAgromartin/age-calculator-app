@@ -1,0 +1,37 @@
+.data-output {
+  width: 100%; height: 50%;
+  display: flex; flex-direction: column;
+  justify-content: space-evenly; align-items: center;
+}
+
+.data-output 
+.day, .month, .year {
+  width: 100%;
+  display: flex; flex-direction: row;
+  justify-content: flex-start; align-items: center;
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.data-output 
+.day span, .month span, .year span {
+  color: var(--purple);
+  margin: 0 15px;
+}
+
+
+@media screen and (min-width:600px) {
+  .data-output 
+  .day, .month, .year {
+    font-size: 3rem;
+  }
+}
+
+
+@media screen and (min-width:900px) {
+  .data-output 
+  .day, .month, .year {
+    font-size: 5rem;
+  }
+}
